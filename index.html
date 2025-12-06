@@ -66,8 +66,33 @@
       background: #fafafa;
       padding: 15px;
       border-radius: 8px;
-      min-height: 150px;
       border: 1px solid #ddd;
+    }
+
+    .project {
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      font-size: 1.05em;
+    }
+
+    .project p {
+      margin: 5px 0 0;
+      color: #555;
+      font-size: 0.95em;
     }
 
     footer {
@@ -77,6 +102,12 @@
       text-align: center;
       margin-top: 40px;
       font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
     }
   </style>
 </head>
@@ -115,6 +146,37 @@
       <li>Anglais</li>
       <li>Malagasy</li>
     </ul>
+  </div>
+
+  <!-- Section Projets -->
+  <div class="section" id="projects">
+    <h2>Projets</h2>
+
+    <div class="project">
+      <a href="details_safedrive.html">SafeDrive</a>
+      <p>Projet de mémoire de master en télécommunications : développement d’un logiciel d’assistance intelligent destiné à améliorer la sécurité et le confort du conducteur de véhicules.</p>
+    </div>
+
+    <div class="project">
+      <a href="details_greenfarm.html">GreenFarm</a>
+      <p>Application Desktop pour Windows conçue pour la gestion complète et efficace des exploitations agricoles, incluant le suivi des cultures et des ressources.</p>
+    </div>
+
+    <div class="project">
+      <a href="details_codecorrecteur.html">Codecorrecteur</a>
+      <p>Logiciel éducatif pour étudiants en télécommunications, permettant de simuler et d’analyser les codes correcteurs d’erreurs utilisés dans les systèmes de communication.</p>
+    </div>
+
+    <div class="project">
+      <a href="details_electronik.html">Electronik</a>
+      <p>Outil pédagogique permettant aux étudiants de simuler et de calculer avec précision les valeurs des composants électroniques, notamment les résistances..</p>
+    </div>
+
+    <div class="project">
+      <a href="details_afroweb.html">Afroweb</a>
+      <p>Application web professionnelle facilitant la gestion des tâches, du suivi des interventions et de la présence des techniciens au sein de la société AFROTEL.</p>
+    </div>
+
   </div>
 
 </div>
